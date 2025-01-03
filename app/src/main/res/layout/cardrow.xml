@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="370dp"
+    android:layout_height="170dp"
+    android:layout_margin="8dp"
+    app:cardElevation="4dp"
+    app:cardCornerRadius="18dp"
+    app:cardBackgroundColor="#80FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="8dp">
+
+        <!-- Team 1 Image -->
+        <ImageView
+            android:id="@+id/team1"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:scaleType="fitCenter"
+            android:layout_marginLeft="10dp"
+            tools:src="@tools:sample/avatars" />
+
+        <!-- Vertical Layout for League and Text -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- League Logo -->
+            <ImageView
+                android:id="@+id/league"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dp"
+                android:scaleType="fitCenter"
+                android:layout_marginTop="5dp"
+                tools:src="@tools:sample/avatars" />
+
+            <!-- Match Details Text -->
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Match Details"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:textColor="@color/black"
+                tools:text="AC Milan vs AS Roma\n29/12/24\n21:45" />
+
+            <!-- Match Description -->
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Stadium Details"
+                android:textSize="10sp"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:textColor="@color/black"
+                tools:text="Stadio Giuseppe Meazza" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:singleLine="false"
+                android:ellipsize="none"
+                android:textColor="@color/black"
+                android:text="€100" />
+        </LinearLayout>
+
+        <!-- Team 2 Image -->
+        <ImageView
+            android:id="@+id/team2"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_marginRight="10dp"
+            android:scaleType="fitCenter"
+            tools:src="@tools:sample/avatars" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

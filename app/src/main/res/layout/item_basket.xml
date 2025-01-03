@@ -1,0 +1,88 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="12dp"
+    android:background="@android:color/white"
+    android:gravity="center_vertical"
+    android:divider="?android:dividerVertical"
+    android:showDividers="middle">
+
+    <!-- Match Name -->
+    <TextView
+        android:id="@+id/matchName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.5"
+        android:text="Match Name"
+        android:textSize="12sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:paddingEnd="2dp" />
+    <TextView
+        android:id="@+id/emptyBasketText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Your cart is empty!"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:textColor="@android:color/darker_gray" />
+
+    <!-- Ticket Count -->
+    <TextView
+        android:id="@+id/ticketCount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Tickets: 0"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Price -->
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Price: $0.00"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:textColor="@android:color/black" />
+
+    <!-- Increment Button -->
+    <ImageButton
+        android:id="@+id/incrementButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_input_add"
+        android:background="?attr/selectableItemBackground"
+        app:tint="#4CAF50"
+        android:contentDescription="Increase Ticket Count"
+        android:padding="4dp" />
+
+    <!-- Decrement Button -->
+    <ImageButton
+        android:id="@+id/decrementButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_input_delete"
+        android:background="?attr/selectableItemBackground"
+        app:tint="#F44336"
+        android:contentDescription="Decrease Ticket Count"
+        android:padding="4dp" />
+
+    <!-- Remove Button -->
+    <ImageButton
+        android:id="@+id/removeButton"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_delete"
+        android:background="?attr/selectableItemBackground"
+        app:tint="#FF5722"
+        android:contentDescription="Remove Item"
+        android:padding="4dp" />
+</LinearLayout>
